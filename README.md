@@ -1,5 +1,7 @@
 # Neo Framework 3
 
+The PHP Framework For Web Peasants
+
 ## Getting Started
 
 ```
