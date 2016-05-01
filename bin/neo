@@ -14,15 +14,15 @@ function initproject
         target="$2"
         scriptdir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-        mkdir -pv "$target/$name" && cd "$target/$name"
-        cp -rfv "$scriptdir/../app/{config,public,templates}" ./
-        cp -rfv "$scriptdir/../app/gitignore" .gitignore
-        mkdir -pv "src/$name"
-        cp -rfv "$scriptdir/../app/src/"* "src/$name/"
-        cat "$scriptdir/../app/composer.json" | printf - $name $name > composer.json
-        wget https://getcomposer.org/composer.phar
-        php composer.phar install
+        cd $target && mkdir -pv "$name/src/$name" && cd $name
 
+        cp -rfv "$scriptdir/../app/"{config,public,templates} ./
+        cp -rfv "$scriptdir/../app/gitignore" .gitignore
+        cp -rfv "$scriptdir/../app/src/"* "src/$name/"
+
+        cat "$scriptdir/../app/composer.json" | printf - $name $name > composer.json
+
+        wget https://getcomposer.org/composer.phar && php composer.phar install
 
     else
         error "Wrong number of arguments!"
