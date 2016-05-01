@@ -20,7 +20,8 @@ function initproject
         cp -rfv "$scriptdir/../app/gitignore" .gitignore
         cp -rfv "$scriptdir/../app/src/"* "src/$name/"
 
-        cat "$scriptdir/../app/composer.json" | printf - $name $name > composer.json
+        cp -rfv "$scriptdir/../app/composer.json" ./
+        sed -i "s/{namespace}/$name/g" composer.json
 
         wget https://getcomposer.org/composer.phar && php composer.phar install
 

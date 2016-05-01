@@ -8,7 +8,7 @@
     {
         "psr-4":
         {
-            "%s\\": "src/%s/"
+            "{namespace}\\": "src/{namespace}/"
         }
     }
 }
