@@ -1,20 +1,33 @@
 #!/bin/bash
 
+function usage
+{
+    echo -e "Neo Framework Command-line tool (https://neo-framework.github.io)\n\nUSAGE\n\n\tneo init <project> <path>\n\n\tneo help\n"
+}
+
 function initproject
 {
     echo "Initializing new Neo project..."
     if [[ $# == 2 ]]; then
-        echo "Name: $1"
-        echo "Target: $2"
+
+        name="$1"
+        target="$2"
+        scriptdir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+        mkdir -pv "$target/$name" && cd "$target/$name"
+        cp -rfv "$scriptdir/../app/{config,public,templates}" ./
+        cp -rfv "$scriptdir/../app/gitignore" .gitignore
+        mkdir -pv "src/$name"
+        cp -rfv "$scriptdir/../app/src/"* "src/$name/"
+        cat "$scriptdir/../app/composer.json" | printf - $name $name > composer.json
+        wget https://getcomposer.org/composer.phar
+        php composer.phar install
+
+
     else
         error "Wrong number of arguments!"
     fi
     success "Project created successfully."
-}
-
-function usage
-{
-    echo -e "Neo Framework Command-line tool (https://neo-framework.github.io)\n\nUSAGE\n\n\tneo init <project> <path>\n\n\tneo help\n"
 }
 
 function unknowncmd

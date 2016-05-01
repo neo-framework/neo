@@ -6,5 +6,5 @@ The PHP Framework For Web Peasants
 
 ```
 git clone https://github.com/neo-framework/neo3.git
-neo3/bin/neo init /your/awesome/project
+neo3/bin/neo init awesomeproject ~/
 ```
