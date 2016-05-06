@@ -1,0 +1,25 @@
+{
+    "name": "neo-framework/neo",
+    "description": "Neo PHP Framework",
+    "homepage": "https://neo-framework.github.io",
+    "keywords":
+    [
+        "framework",
+        "neo"
+    ],
+    "license": "MIT",
+    "authors":
+    [
+        {
+            "name": "YouniS Bensalah",
+            "email": "younis.bensalah@gmail.com",
+            "homepage": "http://younishd.fr"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require":
+    {
+        "php": ">=5.6.0",
+        "neo-framework/neo-core": "dev-master"
+    }
+}
