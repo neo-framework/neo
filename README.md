@@ -1,10 +1,9 @@
-# Neo Framework 3
+# Neo Framework
 
 The PHP Framework For Web Peasants
 
 ## Getting Started
 
 ```
-git clone https://github.com/neo-framework/neo3.git
-neo3/bin/neo init awesomeproject ~/
+composer create-project neo-framework/neo path/to/install
 ```
