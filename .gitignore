@@ -1,0 +1,5 @@
+/vendor/
+.directory
+composer.phar
+phpunit.phar
+/nbproject/
