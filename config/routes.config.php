@@ -1,27 +1,26 @@
 <?php
 
-/*!
- * Neo Framework (https://neo-framework.github.io)
+/**
+ * Neo Framework
  *
- * Copyright (c) 2016 YouniS Bensalah <younis.bensalah@gmail.com>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
+ * @link https://neo-framework.github.io
+ * @copyright Copyright (c) 2016 YouniS Bensalah <younis.bensalah@gmail.com>
+ * @license MIT
  */
 
 return [
     'routes' => [
 
         '/' => [
+            'method' => 'GET',
             'action' => 'index',
-            'controller' => 'HelloWorldController',
-            'method' => 'GET'
+            'controller' => 'HelloWorld'
         ],
 
         '/about' => [
+            'method' => 'GET',
             'action' => 'about',
-            'controller' => 'HelloWorldController',
-            'method' => 'GET'
+            'controller' => 'HelloWorld'
         ]
 
     ]
