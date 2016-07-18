@@ -10,7 +10,9 @@
 
 namespace MyApp\controllers;
 
-abstract class HelloController
+use \neo\controller\AbstractController;
+
+class HelloController extends AbstractController
 {
 
     public function index_action()

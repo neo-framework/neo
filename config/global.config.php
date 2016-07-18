@@ -28,7 +28,7 @@ return [
         // Whether or not to enable debug mode.
         // In debug mode any errors/exceptions are printed.
         // You better disable this in production!
-        'debug' => false
+        'debug' => true
 
     ]
 ];
