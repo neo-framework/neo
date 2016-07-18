@@ -41,11 +41,11 @@ return [
         },
 
         'neo/router' => function ($c) {
-            return new neo\Router($c['vendor/klein'], $c['neo/controller_factory']);
+            return new neo\router\Router($c['vendor/klein'], $c['neo/controller_factory']);
         },
 
         'neo/controller_factory' => function ($c) {
-            return new neo\ControllerFactory();
+            return new neo\factory\ControllerFactory();
         },
 
         'neo/view_factory' => function ($c) {

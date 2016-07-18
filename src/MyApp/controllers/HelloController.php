@@ -8,14 +8,19 @@
  * @license MIT
  */
 
-namespace MyApp;
+namespace MyApp\controllers;
 
 abstract class HelloController
 {
 
-    public function hello_action()
+    public function index_action()
     {
         return '<h1>Hello</h1>';
+    }
+
+    public function about_action()
+    {
+        return '<h1>Neo Framework</h1>';
     }
 
 }
