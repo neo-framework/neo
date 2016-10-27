@@ -1,12 +1,9 @@
 {
     "name": "neo-framework/neo",
-    "description": "Neo PHP Framework",
+    "description": "Skeleton application for Neo Framework projects",
+    "version": "0.0.1-dev",
     "homepage": "https://neo-framework.github.io",
-    "keywords":
-    [
-        "framework",
-        "neo"
-    ],
+    "keywords": ["framework", "neo"],
     "license": "MIT",
     "authors":
     [
@@ -19,14 +16,10 @@
     "minimum-stability": "dev",
     "require":
     {
-        "php": ">=5.6.0",
         "neo-framework/neo-core": "dev-master"
     },
     "autoload":
     {
-        "psr-4":
-        {
-            "MyApp\\": "src/MyApp/"
-        }
+        "psr-4": {"": "src/"}
     }
 }
