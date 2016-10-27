@@ -1,9 +1,13 @@
 # Neo Framework
 
-The PHP Framework For Web Peasants
+Skeleton application for Neo Framework projects
 
 ## Getting Started
 
 ```
 composer create-project -s dev neo-framework/neo path/to/install
 ```
+
+## License
+
+[MIT](LICENSE)
