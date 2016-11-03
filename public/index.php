@@ -14,4 +14,4 @@ define('ROOT_DIR', realpath(__DIR__ . '/..'));
 
 require ROOT_DIR . '/vendor/autoload.php';
 
-neo\App::get(ROOT_DIR)->run();
+neo\App::instance(ROOT_DIR)->run();
