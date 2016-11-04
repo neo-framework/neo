@@ -1,18 +1,10 @@
 <?php
 
-/**
- * Neo Framework
- *
- * @link https://neo-framework.github.io
- * @copyright Copyright (c) 2016 YouniS Bensalah <younis.bensalah@gmail.com>
- * @license MIT
- */
-
 namespace MyApp\controllers;
 
-use \neo\controller\AbstractController;
+use \neo\controller\Controller;
 
-class HelloController extends AbstractController
+class HelloController extends Controller
 {
 
     public function index_action()
