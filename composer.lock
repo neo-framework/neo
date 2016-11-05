@@ -146,20 +146,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/klein/klein.php.git",
-                "reference": "eb80e09d222aa1a6ca2a0ea48b386433d8c4d169"
+                "reference": "94a057462f1f2de95450dc729c65b23b12c48557"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/klein/klein.php/zipball/eb80e09d222aa1a6ca2a0ea48b386433d8c4d169",
-                "reference": "eb80e09d222aa1a6ca2a0ea48b386433d8c4d169",
+                "url": "https://api.github.com/repos/klein/klein.php/zipball/94a057462f1f2de95450dc729c65b23b12c48557",
+                "reference": "94a057462f1f2de95450dc729c65b23b12c48557",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
             "require-dev": {
-                "phpunit/php-code-coverage": "2.x",
-                "phpunit/phpunit": "4.1.x",
+                "phpunit/php-code-coverage": "^2.2",
+                "phpunit/phpunit": "^4.8",
                 "squizlabs/php_codesniffer": "1.4.8"
             },
             "type": "library",
@@ -182,19 +182,19 @@
                 {
                     "name": "Trevor Suarez",
                     "email": "rican7@gmail.com",
-                    "homepage": "http://about.me/tnsuarez",
+                    "homepage": "https://trevorsuarez.com/",
                     "role": "Contributor/Developer"
                 }
             ],
             "description": "A lightning fast router for PHP",
-            "homepage": "https://github.com/chriso/klein.php",
+            "homepage": "https://github.com/klein/klein.php",
             "keywords": [
                 "boilerplate",
                 "router",
                 "routing",
                 "sinatra"
             ],
-            "time": "2014-12-16 01:08:24"
+            "time": "2016-11-01 06:01:39"
         },
         {
             "name": "neo-framework/neo-core",
@@ -202,18 +202,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neo-framework/neo-core.git",
-                "reference": "5bfd6757225da9dc6b3350b0e780397006f342dd"
+                "reference": "2a274e8a1f6e0f596494f9c6ee9116f9c5eed1b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neo-framework/neo-core/zipball/5bfd6757225da9dc6b3350b0e780397006f342dd",
-                "reference": "5bfd6757225da9dc6b3350b0e780397006f342dd",
+                "url": "https://api.github.com/repos/neo-framework/neo-core/zipball/2a274e8a1f6e0f596494f9c6ee9116f9c5eed1b9",
+                "reference": "2a274e8a1f6e0f596494f9c6ee9116f9c5eed1b9",
                 "shasum": ""
             },
             "require": {
                 "katzgrau/klogger": "dev-master",
                 "klein/klein": "dev-master",
-                "php": "^7.0",
                 "phpmailer/phpmailer": "dev-master",
                 "pimple/pimple": "^3.0@dev",
                 "psr/log": "^1.0",
@@ -245,7 +244,7 @@
                 "Neo",
                 "framework"
             ],
-            "time": "2016-09-04 21:11:40"
+            "time": "2016-11-05 00:35:39"
         },
         {
             "name": "phpmailer/phpmailer",
