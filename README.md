@@ -89,6 +89,8 @@ Template files should be kept under `templates/`. They can be located in subdire
 
 ## Model
 
+_Coming soon haha_
+
 ## License
 
 _Neo Framework_ is open-sourced software licensed under the [MIT license](LICENSE).
