@@ -1,6 +1,6 @@
 <?php
 
-namespace MyApp\controllers;
+namespace myapp\controllers;
 
 use \neo\controller\Controller;
 
