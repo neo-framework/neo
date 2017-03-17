@@ -20,7 +20,11 @@ return [
         // Whether or not to enable debug mode.
         // In debug mode any errors/exceptions are printed.
         // You better disable this in production!
-        //'debug' => true
+        //'debug' => true,
+
+        // Namespace of the application
+        // This is needed by factory classes to map a class name to the fully qualified name.
+        //'app_ns' => 'myapp'
 
     ]
 ];

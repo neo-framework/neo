@@ -6,7 +6,7 @@ return [
         '/' => [
             'method' => 'GET',
             'action' => 'index_action',
-            'controller' => '\\MyApp\\controllers\\HelloController'
+            'controller' => 'HelloController'
         ]
 
     ]
