@@ -4,10 +4,91 @@ Skeleton application for Neo Framework projects
 
 ## Getting Started
 
+Create a new project:
+
 ```
 composer create-project -s dev neo-framework/neo path/to/install
 ```
 
+This will fetch all necessary packages and give you a __ready to deploy skeleton application__ that displays a hello world page.
+
+## Router
+
+The router set-up is done in `config/routes.config.php`.
+
+### Simple routing
+
+```
+'routes' => [
+
+    '/' => [
+        'method' => 'GET',
+        'action' => 'index_action',
+        'controller' => 'HelloController'
+    ]
+
+]
+```
+
+### Request & Response
+
+You have access to `Request` and `Response` objects inside the controller class via `$this->request` and `$this->response` properties.
+
+Neo uses [klein.php](https://github.com/klein/klein.php) as a router back-end, so you have to refer to the corresponding [API reference](https://github.com/klein/klein.php#api) to learn what you can do said request and response.
+
+## Controller
+
+Controllers should be located in `src/myapp/controllers/` and have the namespace `myapp\controllers` where `myapp` is the application namespace (`app_ns` in `global.config.php`).
+
+A simple controller could look like this:
+
+```php
+namespace myapp\controllers;
+
+use \neo\controller\Controller;
+
+class HelloController extends Controller
+{
+
+    public function index_action()
+    {
+        return '<h1>Wake up, Neo...</h1>';
+    }
+
+}
+```
+
+## View
+
+Views are responsible for generating the specific output required for the request.
+
+Neo relies on [endobox](https://github.com/younishd/endobox) as template engine, so you might want to check out its [awesome documentation](https://github.com/younishd/endobox/wiki).
+
+This is a basic example of a view call inside a controller:
+
+```php
+public function something_action()
+{
+    // create views
+    $header = $this->view('header');
+    $something = $this->view('something');
+    $footer = $this->view('footer');
+
+    // append them together
+    $header($something)($footer);
+
+    // assign some data
+    $something->assign([ 'answer' => 42 ]);
+
+    // render and return
+    return $header->render();
+}
+```
+
+Template files should be kept under `templates/`. They can be located in subdirectories.
+
+## Model
+
 ## License
 
-[MIT](LICENSE)
+_Neo Framework_ is open-sourced software licensed under the [MIT license](LICENSE).
