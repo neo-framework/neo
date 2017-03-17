@@ -1,5 +1,3 @@
 /vendor/
 .directory
-composer.phar
-phpunit.phar
-/nbproject/
+composer.lock
