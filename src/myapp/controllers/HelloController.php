@@ -9,7 +9,14 @@ class HelloController extends Controller
 
     public function index_action()
     {
-        return '<h1>Wake up, Neo...</h1>';
+        // create a view from template
+        $wakeup = $this->view('wakeup');
+
+        // assign some data
+        $wakeup->assign([ 'hacker' => 'Neo' ]);
+
+        // render and return
+        return $wakeup->render();
     }
 
 }
