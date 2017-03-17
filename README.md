@@ -30,6 +30,10 @@ The router set-up is done in `config/routes.config.php`.
 ]
 ```
 
+I know you're lazy (looking at you [@fwhcat](https://github.com/fwhcat)) so:
+- If you omit `method` it will default to `GET`
+- If you omit `action` it will default to `index_action`
+
 ### Request & Response
 
 You have access to `Request` and `Response` objects inside the controller class via `$this->request` and `$this->response` properties.
