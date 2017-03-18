@@ -1,6 +1,6 @@
 # Neo Framework
 
-Skeleton application for Neo Framework projects
+Skeleton application for Neo Framework projects :green_apple:
 
 ## Getting Started
 
