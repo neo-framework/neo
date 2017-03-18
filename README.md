@@ -36,9 +36,10 @@ I know you're lazy (looking at you [@fwhcat](https://github.com/fwhcat)) so:
 
 ### Request & Response
 
-You have access to `Request` and `Response` objects inside the controller class via `$this->request` and `$this->response` properties.
+You have access to `Request` and `Response` objects inside the controller class via  
+`$this->request` and `$this->response` properties.
 
-Neo uses [klein.php](https://github.com/klein/klein.php) as a router back-end, so you have to refer to the corresponding [API reference](https://github.com/klein/klein.php#api) to learn what you can do said request and response.
+Neo uses [klein.php](https://github.com/klein/klein.php) as a router back-end, so you have to refer to the corresponding [API reference](https://github.com/klein/klein.php#api) to learn what you can do with said request and response.
 
 ## Controller
 
