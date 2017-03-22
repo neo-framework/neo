@@ -94,7 +94,42 @@ Template files should be kept under `templates/`. They can be located in subdire
 
 ## Model
 
-_Coming soon haha_
+Models should be located in `src/myapp/models/` and have the namespace `myapp\models` where `myapp` is the application namespace (`app_ns` in `global.config.php`).
+
+A simple model could look like this:
+
+```php
+namespace myapp\models;
+
+use \neo\model\Model;
+
+class SomeModel extends Model
+{
+
+    public function get_something()
+    {
+        // you have direct access to a PDO object connected to your mysql database
+        return $this->db->query('SELECT * FROM sometable')->fetchAll();
+    }
+
+}
+```
+
+In the controller you can then get the model as follows:
+
+```php
+class SomeController extends Controller
+{
+
+    public function some_action()
+    {
+        $model = $this->model('SomeModel');
+
+        // do stuff...
+    }
+
+}
+```
 
 ## License
 
