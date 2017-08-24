@@ -183,7 +183,7 @@ class DoNothingPlugin extends Plugin
 Inside our controller, we could do something like this:
 
 ```php
-class BarController extends controller
+class BarController extends Controller
 {
     public function bar_action()
     {
@@ -201,6 +201,16 @@ class BarController extends controller
 - `on_load()`
 
 A callback that is called when the plug-in gets loaded for the first time.
+
+```php
+class DoNothingPlugin extends Plugin
+{
+    protected function on_load()
+    {
+        echo "I'm loading!";
+    }
+}
+```
 
 
 ## License
