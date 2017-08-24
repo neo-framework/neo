@@ -16,7 +16,8 @@
     "minimum-stability": "dev",
     "require":
     {
-        "neo-framework/neo-core": "dev-master"
+        "neo-framework/neo-core": "dev-master",
+        "neo-framework/neo-plugins": "dev-master"
     },
     "autoload":
     {

@@ -50,7 +50,7 @@ A simple controller could look like this:
 ```php
 namespace myapp\controllers;
 
-use \neo\controller\Controller;
+use \neo\core\controller\Controller;
 
 class HelloController extends Controller
 {
@@ -72,7 +72,7 @@ Neo relies on [endobox](https://github.com/younishd/endobox) as template engine,
 This is a basic example of a view call inside a controller:
 
 ```php
-public function something_action()
+public function some_action()
 {
     // create views
     $header = $this->view('header');
@@ -101,7 +101,7 @@ A simple model could look like this:
 ```php
 namespace myapp\models;
 
-use \neo\model\Model;
+use \neo\core\model\Model;
 
 class SomeModel extends Model
 {
@@ -130,6 +130,78 @@ class SomeController extends Controller
 
 }
 ```
+
+## Plug-in API
+
+### Controller Plug-ins
+
+- A controller plug-in is a class that extends `neo\core\controller\Plugin`.
+
+- In order to use a plug-in you have to load it inside the controller using the `load` method.
+
+```php
+$this->load('some_plugin');
+```
+
+- External plug-ins are registered in `plugins.config.php`
+
+```
+'plugins' => [
+
+    'some_plugin' => '\\fully\\qualified\\name\\SomePlugin'
+
+]
+```
+
+- Alternatively, you can drop plug-ins directly in the `plugins/controller/` folder.
+
+```php
+namespace foobar\plugins\controller;
+use \neo\core\controller\Plugin;
+class AwesomeStuffPlugin extends Plugin {}
+```
+
+- The plug-in name will be drawn from the class name: `AwesomeStuffPlugin` becomes `awesome_stuff`.
+
+```php
+$this->load('awesome_stuff');
+```
+
+#### API
+
+Once loaded, all `public` methods defined in the plug-in will be available inside the controller (just like normal methods).
+
+For instance, let's have a look at this plug-in that does nothing:
+
+```php
+class DoNothingPlugin extends Plugin
+{
+    public function foo() {}
+}
+```
+
+Inside our controller, we could do something like this:
+
+```php
+class BarController extends controller
+{
+    public function bar_action()
+    {
+        // load our plugin...
+        $this->load('do_nothing');
+
+        // ...and use it!
+        $this->foo();
+    }
+}
+```
+
+#### Hooks
+
+- `on_load()`
+
+A callback that is called when the plug-in gets loaded for the first time.
+
 
 ## License
 
