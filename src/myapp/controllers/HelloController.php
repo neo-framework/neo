@@ -2,7 +2,7 @@
 
 namespace myapp\controllers;
 
-use \neo\controller\Controller;
+use \neo\core\controller\Controller;
 
 class HelloController extends Controller
 {
