@@ -14,8 +14,8 @@ return [
         //'log_file' => 'log/neo.log',
 
         // Log level threshold (i.e., any messages below that level will not be logged)
-        // Possible values: DEBUG, INFO, NOTICE, WARNING, ERROR, CRITICAL, ALERT, EMERGENCY
-        //'log_level' => 'DEBUG',
+        // Possible values: "debug", "info", "notice", "warning", "error", "critical", "alert", "emergency"
+        //'log_level' => 'debug',
 
         // Whether or not to enable debug mode.
         // In debug mode any errors/exceptions are printed.
@@ -24,7 +24,11 @@ return [
 
         // Namespace of the application
         // This is needed by factory classes to map a class name to the fully qualified name.
-        //'app_ns' => 'myapp'
+        //'app_ns' => 'myapp',
+
+        // Database backend
+        // Possible values: "mysql", "sqlite", null
+        //'database' => null
 
     ]
 ];
