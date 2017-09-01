@@ -18,21 +18,61 @@ The router set-up is done in `config/routes.config.php`.
 
 ### Simple routing
 
-```
-'routes' => [
+Map a route to a controller.
 
-    '/' => [
-        'method' => 'GET',
-        'action' => 'index_action',
-        'controller' => 'HelloController'
+```php
+return [
+    'routes' => [
+
+        '/' => [
+            'method' => 'GET',
+            'action' => 'index_action',
+            'controller' => 'HelloController'
+        ]
+
     ]
-
-]
+];
 ```
 
 I know you're lazy (looking at you [@fwhcat](https://github.com/fwhcat)) so:
-- If you omit `method` it will default to `GET`
-- If you omit `action` it will default to `index_action`
+- if you omit `method` it will default to `GET`
+- if you omit `action` it will default to `index_action`
+
+```
+'/' => [
+    'controller' => 'HelloController'
+]
+```
+
+### HTTP Request Methods
+
+- Map the same route to multiple methods:
+
+```
+'/hello' => [
+    'method' => [ 'GET', 'POST' ],
+    'action' => 'hello_action',
+    'controller' => 'HelloController'
+]
+```
+
+This will map both `GET /hello` and `POST /hello` to `HelloController::hello_action`.
+
+- Map the same route to different methods and different controllers:
+
+```
+'/foobar' => [[
+    'method' => 'GET',
+    'action' => 'foo_action',
+    'controller' => 'FooController'
+],[
+    'method' => 'POST',
+    'action' => 'bar_action',
+    'controller' => 'BarController'
+]]
+```
+
+This will map `GET /foobar` to `FooController::foo_action` and `POST /foobar` to `BarController::bar_action`.
 
 ### Request & Response
 
@@ -195,6 +235,26 @@ class BarController extends Controller
     }
 }
 ```
+
+#### Properties
+
+By extending the `neo\core\controller\Plugin` class you have access to a couple of properties that are linked to the controller, allowing you to implement some interesting functionality.
+
+- `$this->controller`
+
+The calling `neo\core\controller\Controller` instance
+
+- `$this->controller_factory`
+
+The `neo\core\factory\ControllerFactory` instance which allows you to spawn another controller object
+
+- `$this->router`
+
+The current `neo\core\router\Router` instance
+
+- `$this->request` and `$this->response`
+
+The associated `Klein\Request` and `Klein\Response` objects
 
 #### Hooks
 
