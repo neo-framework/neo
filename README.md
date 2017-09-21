@@ -277,7 +277,7 @@ class DoNothingPlugin extends Plugin
 Clone and install everything
 
 ```bash
-echo 'git clone git@github.com:neo-framework/neo'{,-core,-plugins,-framework.github.io}';' 'cd neo'{,-core,-plugins}'&&composer install;' | bash
+echo 'git clone git@github.com:neo-framework/neo'{,-core,-plugins,-framework.github.io}';' '(cd neo'{,-core,-plugins}'&&composer install);' | bash
 ```
 
 ## License
