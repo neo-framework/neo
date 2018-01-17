@@ -1,7 +1,8 @@
 {
     "name": "neo-framework/neo",
-    "description": "Skeleton application for Neo Framework projects",
+    "description": "Skeleton application for Neo Framework projects.",
     "version": "0.0.1-dev",
+    "type": "project",
     "homepage": "https://neo-framework.github.io",
     "keywords": ["framework", "neo"],
     "license": "MIT",
@@ -10,9 +11,15 @@
         {
             "name": "YouniS Bensalah",
             "email": "younis.bensalah@gmail.com",
-            "homepage": "http://younishd.fr"
+            "homepage": "https://younishd.fr"
         }
     ],
+    "config": {
+        "platform": {
+            "php": "7.0.0"
+        },
+        "optimize-autoloader": true
+    },
     "minimum-stability": "dev",
     "require":
     {
