@@ -1,0 +1,7 @@
+{
+    "timezone": "Europe/Berlin",
+    "logging": true,
+    "log-level": "info",
+    "log-method": "netcat|file|console",
+    "app-namespace": "awesome"
+}

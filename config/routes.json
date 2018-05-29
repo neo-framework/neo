@@ -1,0 +1,5 @@
+[
+    { "route": "/foo", "method": "GET", "action": "fooAction", "controller": "FooController" },
+    { "route": "/upload", "method": "POST", "action": "uploadAction", "controller": "UploadController" },
+    { "route": "/", "action": "indexAction", "controller": "IndexController" }
+]
