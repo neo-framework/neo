@@ -1,0 +1,17 @@
+localhost:4000 {
+    root public
+
+    log access.log
+    errors errors.log
+
+    on startup php -S localhost:9000 -t public &
+
+    proxy / localhost:9000 {
+        transparent
+    }
+
+    rewrite {
+    	if {path} not_match ^\/
+    	to {path} {path}/ /index.php
+    }
+}
