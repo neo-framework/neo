@@ -1,7 +1,10 @@
 {
     "timezone": "Europe/Berlin",
+
     "logging": true,
-    "log-level": "info",
-    "log-method": "netcat|file|console",
+    "logging-level": "info",
+    "logging-method": "file",
+    "logging-file": "neo.log",
+
     "app-namespace": "awesome"
 }
