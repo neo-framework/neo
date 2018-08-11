@@ -1,5 +1,0 @@
-[
-    { "route": "/", "method": "GET", "action": "indexAction", "controller": "IndexController" },
-    { "route": "/login", "method": "GET", "action": "loginAction", "controller": "LoginController" },
-    { "route": "/upload", "method": "POST", "action": "uploadAction", "controller": "UploadController" }
-]
