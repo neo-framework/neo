@@ -1,3 +1,4 @@
 /vendor/
+/docs/
+*.phar
 .directory
-/.idea
