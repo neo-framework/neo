@@ -3,6 +3,7 @@
 use neo\core\Neo;
 use neo\core\controller\Controller;
 use neo\core\controller\ControllerFactory;
+use neo\core\controller\DefaultControllerFactory;
 
 session_start();
 
@@ -17,15 +18,19 @@ $app = Neo::create(ROOT_DIR);
 // Poor Man's DI
 //
 // This wiring method should be enough for simple projects where dependencies can be newed up without too much effort.
-$app->registerControllerFactory(new class implements ControllerFactory {
+$app->registerControllerFactory(new DefaultControllerFactory());
+$app->registerControllerFactory(new class extends ControllerFactory {
     public function create(string $type) : Controller {
+
         switch ($type) {
+
+            case '\\awesome\\controllers\\IndexController':
+                return new \awesome\controllers\IndexController(new \awesome\models\ArticleRepository());
 
             // ...
 
             default:
-                // fallback to default constructor
-                return new $type();
+                return $this->fallthrough($type);
         }
     }
 });
@@ -34,7 +39,7 @@ $app->registerControllerFactory(new class implements ControllerFactory {
 // PHP-DI container
 //
 // Use this wiring method when things are getting nasty and you want to use the cool features of a DI container.
-// Don't forget to run "composer require php-di/php-di" in that case!
+// Don't forget to run `composer require php-di/php-di` in that case!
 /*
 $container = DI\ContainerBuilder::buildDevContainer();
 $neo->registerControllerFactory(new class($container) implements ControllerFactory {
