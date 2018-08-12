@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Neo Framework is awesome!</title>
+        <title>Neo</title>
     </head>
     <body>
         <article>
