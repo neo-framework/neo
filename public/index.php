@@ -20,7 +20,7 @@ $app = Neo::create(ROOT_DIR);
 // This wiring method should be enough for simple projects where dependencies can be newed up without too much effort.
 $app->registerControllerFactory(new DefaultControllerFactory());
 $app->registerControllerFactory(new class extends ControllerFactory {
-    public function create(string $type) : Controller {
+    public function create(string $type) : ?Controller {
 
         switch ($type) {
 
