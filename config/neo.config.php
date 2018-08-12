@@ -1,6 +1,4 @@
-<?php
-
-return [
+<?php return [
 
     // PHP timezone
     // Possible values: http://php.net/manual/en/timezones.php
