@@ -1,7 +1,7 @@
 {
     "name": "neo-framework/neo",
     "description": "Skeleton application for Neo Framework projects.",
-    "version": "0.0.1",
+    "version": "0.0.1-dev",
     "type": "project",
     "homepage": "https://neo-framework.github.io",
     "keywords": ["framework", "neo"],
