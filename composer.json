@@ -1,7 +1,7 @@
 {
     "name": "neo-framework/neo",
     "description": "Skeleton application for Neo Framework projects.",
-    "version": "0.0.1-dev",
+    "version": "0.0.1",
     "type": "project",
     "homepage": "https://neo-framework.github.io",
     "keywords": ["framework", "neo"],
@@ -16,15 +16,14 @@
     ],
     "config": {
         "platform": {
-            "php": "7.0.0"
+            "php": "7.1.0"
         },
         "optimize-autoloader": true
     },
     "minimum-stability": "dev",
     "require":
     {
-        "neo-framework/neo-core": "dev-master",
-        "neo-framework/neo-plugins": "dev-master"
+        "neo-framework/neo-core": "dev-master"
     },
     "autoload":
     {
