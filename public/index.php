@@ -7,6 +7,8 @@ use neo\core\controller\DefaultControllerFactory;
 
 session_start();
 
+error_reporting(-1);
+
 define('ROOT_DIR', realpath(__DIR__ . '/..'));
 
 require ROOT_DIR . '/vendor/autoload.php';
