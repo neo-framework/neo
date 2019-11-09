@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3d991f3b0ff28b33bef5e8f8a8794f45",
+    "content-hash": "21d93e1b8f4b73973822e75aa218ea15",
     "packages": [
         {
             "name": "erusev/parsedown",
-            "version": "1.8.0-beta-5",
+            "version": "1.8.0-beta-7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/erusev/parsedown.git",
-                "reference": "c26a2ee4bf8ba0270daab7da0353f2525ca6564a"
+                "reference": "fe7a50eceb4a3c867cc9fa9c0aa906b1067d1955"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/erusev/parsedown/zipball/c26a2ee4bf8ba0270daab7da0353f2525ca6564a",
-                "reference": "c26a2ee4bf8ba0270daab7da0353f2525ca6564a",
+                "url": "https://api.github.com/repos/erusev/parsedown/zipball/fe7a50eceb4a3c867cc9fa9c0aa906b1067d1955",
+                "reference": "fe7a50eceb4a3c867cc9fa9c0aa906b1067d1955",
                 "shasum": ""
             },
             "require": {
@@ -50,7 +50,7 @@
                 "markdown",
                 "parser"
             ],
-            "time": "2018-06-11T18:15:32+00:00"
+            "time": "2019-03-17T18:47:21+00:00"
         },
         {
             "name": "klein/klein",
@@ -114,20 +114,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neo-framework/neo-core.git",
-                "reference": "d202e3d2836b13394f501f74b0542103ba6b8e00"
+                "reference": "6bcd0982a6c7fac652180ae2c6aae7a99fd90d67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neo-framework/neo-core/zipball/d202e3d2836b13394f501f74b0542103ba6b8e00",
-                "reference": "d202e3d2836b13394f501f74b0542103ba6b8e00",
+                "url": "https://api.github.com/repos/neo-framework/neo-core/zipball/6bcd0982a6c7fac652180ae2c6aae7a99fd90d67",
+                "reference": "6bcd0982a6c7fac652180ae2c6aae7a99fd90d67",
                 "shasum": ""
             },
             "require": {
                 "klein/klein": "dev-master",
-                "php": "^7.0",
+                "php": "^7.1",
                 "psr/log": "^1.0",
-                "symfony/http-foundation": "^3.3",
-                "younishd/endobox": "dev-master"
+                "younishd/endobox": "^4.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^6.5"
@@ -155,50 +154,7 @@
                 "Neo",
                 "framework"
             ],
-            "time": "2018-08-10T17:48:56+00:00"
-        },
-        {
-            "name": "neo-framework/neo-plugins",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/neo-framework/neo-plugins.git",
-                "reference": "ce2093f1a59bd179ae48c49e5074cc091affdd47"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/neo-framework/neo-plugins/zipball/ce2093f1a59bd179ae48c49e5074cc091affdd47",
-                "reference": "ce2093f1a59bd179ae48c49e5074cc091affdd47",
-                "shasum": ""
-            },
-            "require-dev": {
-                "neo-framework/neo-core": "dev-master",
-                "phpunit/phpunit": "^6.3"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "neo\\plugins\\": "src/neo/plugins/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "YouniS Bensalah",
-                    "email": "younis.bensalah@gmail.com",
-                    "homepage": "http://younishd.fr"
-                }
-            ],
-            "description": "Awesome plug-ins for Neo Framework",
-            "homepage": "https://neo-framework.github.io",
-            "keywords": [
-                "Neo",
-                "framework"
-            ],
-            "time": "2017-09-20T20:20:21+00:00"
+            "time": "2019-01-27T18:34:03+00:00"
         },
         {
             "name": "psr/log",
@@ -206,12 +162,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "3490ba5925e6dcbe6de950c5c6b8dce9f6e96eda"
+                "reference": "446d54b4cb6bf489fc9d75f55843658e6f25d801"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/3490ba5925e6dcbe6de950c5c6b8dce9f6e96eda",
-                "reference": "3490ba5925e6dcbe6de950c5c6b8dce9f6e96eda",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/446d54b4cb6bf489fc9d75f55843658e6f25d801",
+                "reference": "446d54b4cb6bf489fc9d75f55843658e6f25d801",
                 "shasum": ""
             },
             "require": {
@@ -220,7 +176,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
@@ -245,132 +201,20 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2018-04-03T15:59:15+00:00"
-        },
-        {
-            "name": "symfony/http-foundation",
-            "version": "v3.3.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "49e8cd2d59a7aa9bfab19e46de680c76e500a031"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/49e8cd2d59a7aa9bfab19e46de680c76e500a031",
-                "reference": "49e8cd2d59a7aa9bfab19e46de680c76e500a031",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5.9",
-                "symfony/polyfill-mbstring": "~1.1"
-            },
-            "require-dev": {
-                "symfony/expression-language": "~2.8|~3.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.3-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\HttpFoundation\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony HttpFoundation Component",
-            "homepage": "https://symfony.com",
-            "time": "2017-07-21T11:04:46+00:00"
-        },
-        {
-            "name": "symfony/polyfill-mbstring",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "d0cd638f4634c16d8df4508e847f14e9e43168b8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/d0cd638f4634c16d8df4508e847f14e9e43168b8",
-                "reference": "d0cd638f4634c16d8df4508e847f14e9e43168b8",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "suggest": {
-                "ext-mbstring": "For best performance"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.9-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Mbstring\\": ""
-                },
-                "files": [
-                    "bootstrap.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony polyfill for the Mbstring extension",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "compatibility",
-                "mbstring",
-                "polyfill",
-                "portable",
-                "shim"
-            ],
-            "time": "2018-08-06T14:22:27+00:00"
+            "time": "2019-11-01T11:05:21+00:00"
         },
         {
             "name": "younishd/endobox",
-            "version": "dev-master",
+            "version": "v4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/younishd/endobox.git",
-                "reference": "8e4f13f8d74d5c47e44c3c261880913bc3b94c5b"
+                "reference": "5225715ed6571efc5d2c0f3882e7fa97a7c7ba2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/younishd/endobox/zipball/8e4f13f8d74d5c47e44c3c261880913bc3b94c5b",
-                "reference": "8e4f13f8d74d5c47e44c3c261880913bc3b94c5b",
+                "url": "https://api.github.com/repos/younishd/endobox/zipball/5225715ed6571efc5d2c0f3882e7fa97a7c7ba2e",
+                "reference": "5225715ed6571efc5d2c0f3882e7fa97a7c7ba2e",
                 "shasum": ""
             },
             "require": {
@@ -397,36 +241,28 @@
                     "homepage": "https://younishd.fr"
                 }
             ],
-            "description": "A clean PHP template engine.",
+            "description": "clean af template engine.",
             "homepage": "https://github.com/younishd/endobox",
             "keywords": [
-                "PHP7",
-                "Simple",
-                "box",
-                "closure",
-                "cute",
+                "engine",
                 "markdown",
-                "parsedown",
                 "php",
-                "php-template",
-                "template",
-                "template-engine"
+                "template"
             ],
-            "time": "2017-12-27T18:42:04+00:00"
+            "time": "2019-11-09T15:58:32+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "neo-framework/neo-core": 20,
-        "neo-framework/neo-plugins": 20
+        "neo-framework/neo-core": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
     "platform-overrides": {
-        "php": "7.0.0"
+        "php": "7.1.0"
     }
 }
