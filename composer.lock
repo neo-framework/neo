@@ -114,12 +114,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neo-framework/neo-core.git",
-                "reference": "6bcd0982a6c7fac652180ae2c6aae7a99fd90d67"
+                "reference": "34ff17ab78d7f70ff26dac4dde4b278ff71a99e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neo-framework/neo-core/zipball/6bcd0982a6c7fac652180ae2c6aae7a99fd90d67",
-                "reference": "6bcd0982a6c7fac652180ae2c6aae7a99fd90d67",
+                "url": "https://api.github.com/repos/neo-framework/neo-core/zipball/34ff17ab78d7f70ff26dac4dde4b278ff71a99e6",
+                "reference": "34ff17ab78d7f70ff26dac4dde4b278ff71a99e6",
                 "shasum": ""
             },
             "require": {
@@ -154,7 +154,7 @@
                 "Neo",
                 "framework"
             ],
-            "time": "2019-01-27T18:34:03+00:00"
+            "time": "2019-11-09T20:37:26+00:00"
         },
         {
             "name": "psr/log",
@@ -162,12 +162,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "446d54b4cb6bf489fc9d75f55843658e6f25d801"
+                "reference": "0f73288fd15629204f9d42b7055f72dacbe811fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/446d54b4cb6bf489fc9d75f55843658e6f25d801",
-                "reference": "446d54b4cb6bf489fc9d75f55843658e6f25d801",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/0f73288fd15629204f9d42b7055f72dacbe811fc",
+                "reference": "0f73288fd15629204f9d42b7055f72dacbe811fc",
                 "shasum": ""
             },
             "require": {
@@ -201,20 +201,20 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2019-11-01T11:05:21+00:00"
+            "time": "2020-03-23T09:12:05+00:00"
         },
         {
             "name": "younishd/endobox",
-            "version": "v4.1.0",
+            "version": "v4.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/younishd/endobox.git",
-                "reference": "5225715ed6571efc5d2c0f3882e7fa97a7c7ba2e"
+                "reference": "57dfe0e110d555fa6b0149f2ce0b739e0037225f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/younishd/endobox/zipball/5225715ed6571efc5d2c0f3882e7fa97a7c7ba2e",
-                "reference": "5225715ed6571efc5d2c0f3882e7fa97a7c7ba2e",
+                "url": "https://api.github.com/repos/younishd/endobox/zipball/57dfe0e110d555fa6b0149f2ce0b739e0037225f",
+                "reference": "57dfe0e110d555fa6b0149f2ce0b739e0037225f",
                 "shasum": ""
             },
             "require": {
@@ -236,12 +236,12 @@
             ],
             "authors": [
                 {
-                    "name": "YouniS Bensalah",
+                    "name": "Younis Bensalah",
                     "email": "younis.bensalah@gmail.com",
                     "homepage": "https://younishd.fr"
                 }
             ],
-            "description": "clean af template engine.",
+            "description": "minimal template engine.",
             "homepage": "https://github.com/younishd/endobox",
             "keywords": [
                 "engine",
@@ -249,7 +249,7 @@
                 "php",
                 "template"
             ],
-            "time": "2019-11-09T15:58:32+00:00"
+            "time": "2020-06-24T12:36:47+00:00"
         }
     ],
     "packages-dev": [],
@@ -264,5 +264,6 @@
     "platform-dev": [],
     "platform-overrides": {
         "php": "7.1.0"
-    }
+    },
+    "plugin-api-version": "1.1.0"
 }
